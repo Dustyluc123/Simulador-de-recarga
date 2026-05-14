@@ -18,11 +18,11 @@ int main() {
     printf("   SIMULADOR DE SESSÃO DE RECARGA - ELETROCHARGE\n");
     printf("====================================================\n\n");
 
-    // Coleta do nome do usuário
+    
     printf("Digite o nome do usuário: ");
     scanf(" %[^\n]", nome);
 
-    // Menu de seleção do tipo de usuário
+
     printf("\nSelecione o tipo de usuário:\n");
     printf("1 - Padrão\n");
     printf("2 - Premium (15%% de desconto)\n");
@@ -67,7 +67,7 @@ int main() {
 
     // Simulação do carregamento minuto a minuto
     for (minuto = 1; minuto <= duracao_min; minuto++) {
-        // Calcula a hora atual do ciclo (evitando passar de 23h)
+       
         hora_atual = (hora_inicio + (minuto - 1) / 60) % 24;
 
         // Definição da tarifa com base no horário
@@ -79,7 +79,7 @@ int main() {
             tarifa_minuto = 0.75; // Horário Padrão
         }
 
-        // Acumula energia (0.10 kWh por minuto) e o custo correspondente
+       
         energia_kwh += 0.10;
         custo_bruto += 0.10 * tarifa_minuto;
     }
@@ -92,7 +92,7 @@ int main() {
     }
     custo_final = custo_bruto - desconto;
 
-    // Cálculo do horário aproximado de término
+    
     int hora_fim = (hora_inicio + duracao_min / 60) % 24;
     int min_fim  = duracao_min % 60;
 
