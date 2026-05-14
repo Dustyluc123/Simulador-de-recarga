@@ -1,0 +1,5 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/lucasbarretosantana/Documents/Simulador/Simulador-de-recarga/output/simulador'
+relocations:     []
+...
