@@ -26,12 +26,12 @@ int main() {
     printf("\nSelecione o tipo de usuário:\n");
     printf("1 - Padrão\n");
     printf("2 - Premium (15%% de desconto)\n");
-    printf("Escolha uma opção:\n");
+    printf("Escolha uma opção: ");
     scanf("%d", &tipo_usuario);
 
     // Validação da opção do usuário
     while (tipo_usuario < 1 || tipo_usuario > 2) {
-        printf("Opção inválida! Escolha uma opção (1 ou 2):\n");
+        printf("Opção inválida! Escolha uma opção (1 ou 2): ");
         scanf("%d", &tipo_usuario);
     }
 
